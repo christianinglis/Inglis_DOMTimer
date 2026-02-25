@@ -6,12 +6,17 @@ const startBtn = document.getElementById("startTimer");
 const stopBtn = document.getElementById("stoptTimer");
 const resetBtn = document.getElementById("resetTimer");
 
-startBtn.addEventListener("click", function(){
+startBtn.addEventListener("click", function() {
 
-    if(intervalID == null) {
-        intervalID == setInterval(function() {
+    if(intervalID === null) {
+        intervalID = setInterval(function() {
             timer++;
             display.innerHTML = timer;
         }, 1000);
     }
+});
+
+stopBtn.addEventListener("click", function() {
+    clearInterval(intervalID);
+    intervalID = null;
 });
