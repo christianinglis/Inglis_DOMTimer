@@ -3,7 +3,7 @@ let intervalID = null;
 
 const display = document.getElementById("timerDisplay");
 const startBtn = document.getElementById("startTimer");
-const stopBtn = document.getElementById("stoptTimer");
+const stopBtn = document.getElementById("stopTimer");
 const resetBtn = document.getElementById("resetTimer");
 
 startBtn.addEventListener("click", function() {
@@ -22,8 +22,8 @@ stopBtn.addEventListener("click", function() {
 });
 
 resetBtn.addEventListener("click", function() {
-    clearInterval(intervalId);
-    intervalId = null;
+    clearInterval(intervalID);
+    intervalID = null;
     timer = 0;
     display.innerHTML = timer;
 });
