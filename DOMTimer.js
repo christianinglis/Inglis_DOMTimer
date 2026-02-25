@@ -3,6 +3,8 @@ let intervalID = null;
 
 const display = document.getElementById("timerDisplay");
 const startBtn = document.getElementById("startTimer");
+console.log(document.querySelectorAll('input'))
+console.log(startBtn)
 const stopBtn = document.getElementById("stopTimer");
 const resetBtn = document.getElementById("resetTimer");
 
