@@ -20,3 +20,10 @@ stopBtn.addEventListener("click", function() {
     clearInterval(intervalID);
     intervalID = null;
 });
+
+resetBtn.addEventListener("click", function() {
+    clearInterval(intervalId);
+    intervalId = null;
+    timer = 0;
+    display.innerHTML = timer;
+});
